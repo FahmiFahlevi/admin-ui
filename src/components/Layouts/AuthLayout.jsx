@@ -68,7 +68,7 @@ const AuthLayout = (props) => {
         </div>
         {/* sign in with google end */}
         {/* link start */}
-        <div className="flex justify-center">
+        <div className="flex justify-center my-2">
           {type == "sign up" ? (
             <>
               <span className="text-sm text-gray-03">Already have an account?&nbsp;</span>
@@ -82,6 +82,9 @@ const AuthLayout = (props) => {
             </Link>
           )}
         </div>
+        <Link to="/forgotPassword" className=" flex justify-center text-sm text-gray-03 font-bolds">
+          Forgot Password
+        </Link>
         {/* link end */}
       </div>
       {/* container end */}
