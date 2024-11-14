@@ -27,7 +27,7 @@ const App = () => {
       element: <ForgotPasswordPage />,
     },
     {
-      path: "/balance",
+      path: "/balances",
       element: <BalancePage />,
     },
     {
