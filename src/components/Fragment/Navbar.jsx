@@ -77,7 +77,7 @@ const Navbar = () => {
             <br />
             View Profile
           </div>
-          <div className="hidden sm:block">
+          <div className="hidden sm:block self-center">
             <Icon.KebabMenu />
           </div>
         </div>
