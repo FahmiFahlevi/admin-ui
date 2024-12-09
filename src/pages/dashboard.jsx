@@ -1,5 +1,8 @@
 import Card from "../components/Elements/Card";
 import { Icon } from "../components/Elements/Icon";
+import CardBalance from "../components/Fragment/Dashboard/CardBalance";
+import CardGoal from "../components/Fragment/Dashboard/CardGoal";
+import CardStatistic from "../components/Fragment/Dashboard/CardStatistic";
 import MainLayout from "../components/Layouts/MainLayout";
 import bills from "../data/bills";
 import expensesBreakdowns from "../data/expense";
@@ -71,8 +74,8 @@ const DashboardPage = () => {
     <MainLayout type="dashboard">
       {/* top content start*/}
       <div className="md:grid md:grid-cols-3 md:gap-x-6">
-        <Card title="Total Balance" />
-        <Card title="Goals" />
+        <CardBalance />
+        <CardGoal />
         <Card title="Upcoming Bill" desc={billCard} />
         <div className="md:col-span-1">
           <Card
@@ -93,7 +96,7 @@ const DashboardPage = () => {
           />
         </div>
         <div className="md:col-span-2 flex flex-col flex-1">
-          <Card title="Statistics" />
+          <CardStatistic />
           <Card variant="md:col-span-2" title="Expenses Breakdown" desc={<div className="lg:grid lg:grid-cols-3">{expenseCard}</div>} />
         </div>
       </div>
